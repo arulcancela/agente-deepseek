@@ -1,0 +1,21 @@
+[project]
+name = "agente-deepseek"
+version = "1.0.0"
+description = "Agente administrador autónomo de Linux potenciado por IA (DeepSeek)."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "openai>=2.0.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
+pythonpath = ["."]

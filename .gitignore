@@ -1,0 +1,35 @@
+# ── Entornos virtuales ────────────────────────────────────────────
+env/
+.venv/
+venv/
+ENV/
+
+# ── Secretos (NUNCA subir) ────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Datos de ejecución del agente (historial, logs de auditoría) ──
+# Se guardan en ~/.agente_deepseek/, nunca dentro del repo.
+historial/
+audit.log
+*.log
+
+# ── Python cache & artifacts ──────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# ── Sistema / editores ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
